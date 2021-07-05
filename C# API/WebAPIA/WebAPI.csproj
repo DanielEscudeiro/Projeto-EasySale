@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>97c31df3-3ff8-4e69-9c01-826b1492a2d2</UserSecretsId>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>WebAPI</AssemblyName>
+    <RootNamespace>WebAPI</RootNamespace>
+    <SignAssembly>false</SignAssembly>
+    <PackageId>WebAPI</PackageId>
+    <Company>WebAPI</Company>
+    <Authors>WebAPI</Authors>
+    <Product>WebAPI</Product>
+    <StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>0</WarningLevel>
+    <OutputPath></OutputPath>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
+    <PackageReference Include="MySql.Data" Version="8.0.23" />
+  </ItemGroup>
+
+
+</Project>
